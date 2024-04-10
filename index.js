@@ -11,7 +11,7 @@ clpp.install(clpp.hls.HlsComponent);
 const anchorEl = document.getElementById('video-anchor');
 const player = new clpp.interstitial.Player({
   config: {
-    // Add your CastLabs license here
+    // If the app/website is hosted on a domain, then a license is required
     // license: '...',
     streaming: {
       // Set to false if you want to use the HLS component on Safari
@@ -20,6 +20,9 @@ const player = new clpp.interstitial.Player({
     },
   },
   anchorEl,
+  // Hint: this value must be lower than the gap between any two interstitials
+  // (end to start) and also lower than the start time of the first interstitial
+  // (relative to the start of the primary content)
   resolutionOffsetSec: 30,
 });
 window.player = player
