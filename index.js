@@ -13,6 +13,11 @@ const player = new clpp.interstitial.Player({
   config: {
     // Add your CastLabs license here
     // license: '...',
+    streaming: {
+      // Set to false if you want to use the HLS component on Safari
+      // instead of the default native playback
+      preferNativeHlsOnSafari: false,
+    },
   },
   anchorEl,
   resolutionOffsetSec: 30,
