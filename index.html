@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="node_modules/@castlabs/prestoplay/cjs/cl.core.js"></script>
+    <script src="node_modules/@castlabs/prestoplay/cjs/cl.mse.js"></script>
+    <script src="node_modules/@castlabs/prestoplay/cjs/cl.hls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mux.js@5.14.1/dist/mux.js"></script>
+    <link rel="stylesheet" href="node_modules/@castlabs/prestoplay/clpp.styles.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="page">
+      <div class="page-container">
+        <section class="hls-i-player">
+          <h2>HLS Interstitial Player</h2>
+          <div class="buttons">
+            <button id="btn-load" class="button">Load</button>
+            <button id="btn-unpause" class="button" disabled>Unpause</button>
+          </div>
+          <div class="anchor-container">
+            <div class="row" id="video-anchor"></div>
+          </div>
+          <div class="metadata">
+            <div id="ui-position"></div>
+            <div id="ui-position-primary"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
