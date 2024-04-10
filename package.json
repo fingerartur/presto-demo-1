@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/fingerartur/presto-demo-1#readme",
   "dependencies": {
-    "@castlabs/prestoplay": "^6.11.1-beta.3"
+    "@castlabs/prestoplay": "^6.11.1-beta.4"
   }
 }

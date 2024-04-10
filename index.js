@@ -10,6 +10,10 @@ clpp.install(clpp.hls.HlsComponent);
 
 const anchorEl = document.getElementById('video-anchor');
 const player = new clpp.interstitial.Player({
+  config: {
+    // Add your CastLabs license here
+    // license: '...',
+  },
   anchorEl,
   resolutionOffsetSec: 30,
 });
